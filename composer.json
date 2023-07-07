@@ -1,0 +1,16 @@
+{
+  "require": {
+  },
+  "scripts": {
+    "csfix": "phpcbf --standard=PSR12 --colors --ignore=./vendor ./",
+    "cscheck": "phpcs --standard=PSR12 --colors --ignore=./vendor ./"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rambouillet\\": "inc/"
+    }
+  }
+}
